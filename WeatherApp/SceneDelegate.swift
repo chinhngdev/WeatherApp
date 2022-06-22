@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // MARK: - Khởi tạo HomeScreen.xib như là màn hình khởi đầu của ứng dụng
         guard let windowScene = (scene as? UIWindowScene) else { return }
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = HomeScreen() // Your initial view controller.
+            window.rootViewController = WeatherViewController() // Your initial view controller.
             window.makeKeyAndVisible()
             self.window = window
     }
